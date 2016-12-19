@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.robi.library' // CREATE A GROUP ID FOR YOUR LIBRARY  com.antoniocappiello.library
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.robi.library' // CREATE A GROUP ID FOR YOUR LIBRARY com.antoniocappiello.library
+                artifactId 'awesomelib' // THE NAME OF YOUR MODULE
+
+                name 'AwesomeLib' // YOUR LIBRARY NAME
+                description 'Description test' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/Robi01/awesomelib' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'RobertoAngeles' //YOUR ID
+                        name 'Roberto Angeles' //YOUR NAME
+                        email 'angeles.roberto01@gmail.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/Robi01/awesomelib.git' // YOUR GIT REPO
+                    developerConnection 'https://github.com/Robi01/awesomelib.git' // YOUR GIT REPO
+                    url 'https://github.com/Robi01/awesomelib' // YOUR SITE  https://github.com/AntonioCappiello/date-utils
+
+                }
+            }
+        }
+    }
+}
